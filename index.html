@@ -176,16 +176,17 @@
             <h2>Entre em Contato</h2>
             <p>Tem alguma dúvida ou quer discutir um projeto? <br> Estamos aqui para ajudar!</p>
         
-            <form action="/enviar-contato" method="POST">
-                <input type="text" name="nome" placeholder="Seu nome" required>
-                <input type="email" name="email" placeholder="Seu e-mail" required>
-                <input type="text" name="modelodesite" placeholder="Modelo de Site (Institucional/E-commerce/Blog...)" required>
-                <input type="text" name="area_atuacao" placeholder="Área de Atuação" required>
-                <input type="tel" name="telefone" placeholder="Telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}" required>
-                <input type="text" name="prazodeentrega" placeholder="Prazo de Entrega Estimada">
-                <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
-                <button type="submit" id="btnEnviar">Enviar Mensagem</button>
-            </form>
+            <form action="http://localhost:3000/enviar-contato" method="POST">
+              <input type="text" name="nome" placeholder="Seu nome" required>
+              <input type="email" name="email" placeholder="Seu e-mail" required>
+              <input type="text" name="modelodesite" placeholder="Modelo de Site" required>
+              <input type="text" name="area_atuacao" placeholder="Área de Atuação" required>
+              <input type="tel" name="telefone" placeholder="Telefone" required>
+              <input type="text" name="prazodeentrega" placeholder="Prazo de Entrega Estimada">
+              <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+              <button type="submit">Enviar Mensagem</button>
+          </form>
+          
 
         </div>
 
